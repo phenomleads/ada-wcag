@@ -1,0 +1,24 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "TypeScript Linter",
+      "trigger": "PostFileSave",
+      "description": "Lints the whole TypeScript project whenever a .ts file is saved (Lesson 3: Hooks).",
+      "matcher": "\\.ts$",
+      "action": {
+        "type": "command",
+        "command": "npx eslint ."
+      }
+    },
+    {
+      "name": "Post-Task Test Runner",
+      "trigger": "PostTaskExec",
+      "description": "Runs the full test suite after a spec task is marked complete (Lesson 3: Hooks). Uses --passWithNoTests so it succeeds before test files exist.",
+      "action": {
+        "type": "command",
+        "command": "npx vitest run --passWithNoTests"
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample Page with Accessibility Violations</title>
+</head>
+<body>
+  <h2>Welcome (should be h1)</h2>
+
+  <!-- WCAG 1.1.1: image missing alt attribute (violation) -->
+  <img src="banner.jpg">
+
+  <!-- Valid: alt="" is fine for decorative images -->
+  <img src="spacer.gif" alt="">
+
+  <!-- Valid: descriptive alt text -->
+  <img src="logo.png" alt="ADA WCAG Checker logo">
+
+  <h4>Jumped from h2 to h4 (heading skip violation)</h4>
+
+  <!-- WCAG 1.3.1: form control with no label (violation) -->
+  <form>
+    <input type="text" name="email">
+
+    <!-- Valid: explicit label -->
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <!-- Valid: excluded type -->
+    <input type="submit" value="Send">
+  </form>
+
+  <h3>Links Section</h3>
+
+  <!-- WCAG 2.4.4: non-descriptive link text (warning) -->
+  <p>For more information, <a href="/details">click here</a>.</p>
+
+  <!-- WCAG 2.4.4: no accessible text at all (error) -->
+  <a href="/mystery"></a>
+
+  <!-- Valid: descriptive link text -->
+  <a href="/pricing">View our pricing plans</a>
+
+  <!-- WCAG 1.4.3: insufficient contrast, normal text (warning) -->
+  <p style="color: #cccccc; background-color: #ffffff;">
+    This text has very low contrast against its background.
+  </p>
+
+  <!-- Valid: sufficient contrast -->
+  <p style="color: #000000; background-color: #ffffff;">
+    This text has sufficient contrast.
+  </p>
+</body>
+</html>
