@@ -4,12 +4,13 @@
     {
       "name": "TypeScript Linter",
       "trigger": "PostFileSave",
-      "description": "Lints the whole TypeScript project whenever a .ts file is saved (Lesson 3: Hooks).",
-      "matcher": "\\.ts$",
       "action": {
         "type": "command",
         "command": "npx eslint ."
-      }
+      },
+      "description": "Lints the whole TypeScript project whenever a .ts file is saved (Lesson 3: Hooks).",
+      "matcher": "\\.ts$",
+      "enabled": true
     },
     {
       "name": "Post-Task Test Runner",
