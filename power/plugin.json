@@ -4,8 +4,12 @@
   "version": "1.0.0",
   "description": "WCAG 2.1 Level AA accessibility validation with automated violation detection for image alt text, form labels, heading hierarchy, link text, and color contrast",
   "author": {
-    "name": "<YOUR REAL NAME>"
+    "name": "phenomleads",
+    "url": "https://github.com/phenomleads/ada-wcag",
+    "email": "phenomleads@gmail.com"
   },
   "keywords": ["wcag", "a11y", "accessibility", "ada"],
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/phenomleads/ada-wcag",
+  "repository": "https://github.com/phenomleads/ada-wcag"
 }

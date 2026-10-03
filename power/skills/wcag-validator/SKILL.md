@@ -3,7 +3,7 @@ name: "wcag-validator"
 description: "Validates HTML content against WCAG 2.1 Level AA success criteria (image alt text, form labels, heading hierarchy, link text, color contrast) and explains violations with exact remediation text. Use when auditing a webpage or HTML snippet for accessibility issues, reviewing a pull request that touches markup, or explaining why an accessibility scanner flagged something."
 license: "MIT"
 metadata:
-  author: "<YOUR REAL NAME>"
+  author: "phenomleads"
   version: "1.0.0"
 ---
 
